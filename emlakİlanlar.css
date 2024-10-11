@@ -1,0 +1,86 @@
+/* Genel ayarlar */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container ayarları */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Başlık stili */
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* İlan kutusu stili */
+.ilan {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* İlan kutusu hover efekti */
+.ilan:hover {
+    transform: scale(1.02);
+}
+
+/* İlan resmi */
+.ilan img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* İlan detayları */
+.ilan-detay {
+    padding: 20px;
+    text-align: left;
+}
+
+/* İlan başlığı */
+.ilan-detay h3 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+/* Açıklama */
+.ilan-detay p {
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Fiyat stili */
+.fiyat {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+    .ilan {
+        flex-direction: column;
+    }
+
+    .ilan img {
+        width: 100%;
+        height: auto;
+    }
+
+    .ilan-detay {
+        text-align: center;
+    }
+}
